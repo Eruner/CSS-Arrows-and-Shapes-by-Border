@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrows, Borders, Shapes</title>
+<style>
+body{
+	background-color: #f2f2f2;
+	padding-bottom: 8em;
+}
+h1{
+	text-align: center;
+}
+.arrow {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid white;
+}
+.arrow2 {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid transparent;
+}
+.arrow-up {
+	border-bottom: 36px solid black;
+}
+.arrow-down {
+	border-top: 36px solid black;
+}
+.arrow-left {
+	border-right: 36px solid black;
+}
+.arrow-right {
+	border-left: 36px solid black;
+}
+pre{
+	display: inline-block;
+	background-color: #fff2e6;
+	border: 1px solid lightgray;
+	padding: 0.5em 1em;
+	margin: 1em;
+}
+
+div{
+	display: inline-block;
+	font-size: 0;
+}
+.tri1{
+	border-left: 100px solid transparent;
+	border-top: 100px solid #CE5937;
+}
+.tri2{
+	border-top: 100px solid transparent;
+	border-right: 100px solid #CE5937;
+}
+.tri3{
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid #CE5937;
+}
+.tri4{
+	border-bottom: 100px solid transparent;
+	border-left: 100px solid #CE5937;
+}
+.tri11{
+	border-left: 50px solid transparent;
+	border-top: 100px solid #CE5937;
+}
+.tri22{
+	border-top: 50px solid transparent;
+	border-right: 100px solid #CE5937;
+}
+.tri33{
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #CE5937;
+}
+.tri44{
+	border-bottom: 50px solid transparent;
+	border-left: 100px solid #CE5937;
+}
+.down50{
+	margin-top: -50px;
+	transform: translateY(50px);
+}
+.move-left{
+	margin-left: -154px;
+}
+
+.for1 {
+	border-top: 100px solid #CE5937;
+	border-bottom: 100px solid #CE5937;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+}
+.for2 {
+	border-left: 100px solid #CE5937;
+	border-right: 100px solid #CE5937;
+	border-top: 100px solid transparent;
+	border-bottom: 100px solid transparent;
+}
+</style>
+</head>
+<body>
+<h1>Arrows, Borders, Shapes, all for quick copy-paste</h1>
+<h3>Basic Arrows:</h3>
+<div class="arrow arrow-left"></div>
+<pre>.arrow-left {
+	padding: 0px;
+	display: inline-block;
+	border: 36px solid white;
+	border-right: 36px solid black;
+}</pre>
+<div class="arrow arrow-up"></div>
+<pre>.arrow-up {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid white;
+	border-bottom: 36px solid black;
+}</pre>
+<div class="arrow arrow-down"></div>
+<pre>.arrow-down {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid white;
+	border-top: 36px solid black;
+}</pre>
+<div class="arrow arrow-right"></div>
+<pre>.arrow-right {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid white;
+	border-left: 36px solid black;
+}</pre>
+<h3>Arrows with Transparent color:</h3>
+<div class="arrow2 arrow-left"></div>
+<pre>.arrow-left {
+	padding: 0px;
+	display: inline-block;
+	border: 36px solid transparent;
+	border-right: 36px solid black;
+}</pre>
+<div class="arrow2 arrow-up"></div>
+<pre>.arrow-up {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid transparent;
+	border-bottom: 36px solid black;
+}</pre>
+<div class="arrow2 arrow-down"></div>
+<pre>.arrow-down {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid transparent;
+	border-top: 36px solid black;
+}</pre>
+<div class="arrow2 arrow-right"></div>
+<pre>.arrow-right {
+	padding : 0px;
+	display : inline-block;
+	border : 36px solid transparent;
+	border-left: 36px solid black;
+}</pre>
+<h3>You can combine arrows (triangles) together:</h3>
+<div>
+	<div class="tri2"></div>
+	<div class="tri3"></div><br/>
+	<div class="tri1"></div>
+	<div class="tri4"></div>
+</div>
+<pre>used CSS:
+div{
+	display: inline-block;
+	font-size: 0;
+}
+.tri1{
+	border-left: 100px solid transparent;
+	border-top: 100px solid #CE5937;
+}
+.tri2{
+	border-top: 100px solid transparent;
+	border-right: 100px solid #CE5937;
+}
+.tri3{
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid #CE5937;
+}
+.tri4{
+	border-bottom: 100px solid transparent;
+	border-left: 100px solid #CE5937;
+}</pre>
+<pre style="vertical-align: top;">used HTML:
+
+&lt;div&gt;
+	&lt;div class=&quot;tri2&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri3&quot;&gt;&lt;/div&gt;&lt;br/&gt;
+	&lt;div class=&quot;tri1&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri4&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre><br/>
+<div>
+	<div class="tri4"></div>
+	<div class="tri1"></div><br/>
+	<div class="tri3"></div>
+	<div class="tri2"></div>
+</div>
+<pre style="vertical-align: top;">same CSS as above, and used this HTML:
+
+&lt;div&gt;
+	&lt;div class=&quot;tri4&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri1&quot;&gt;&lt;/div&gt;&lt;br/&gt;
+	&lt;div class=&quot;tri3&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre><br/>
+<h3>You can make rectangular base to achieve this effect:</h3>
+<div>
+	<div class="tri44"></div>
+	<div class="tri11 down50"></div><br/>
+	<div class="tri33"></div>
+	<div class="tri22"></div>
+</div>
+<pre>used CSS:
+div{
+	display: inline-block;
+	font-size: 0;
+}
+.tri11{
+	border-left: <b>50px</b> solid transparent;
+	border-top: <b>100px</b> solid #CE5937;
+}
+.tri22{
+	border-top: <b>50px</b> solid transparent;
+	border-right: <b>100px</b> solid #CE5937;
+}
+.tri33{
+	border-right: <b>50px</b> solid transparent;
+	border-bottom: <b>100px</b> solid #CE5937;
+}
+.tri44{
+	border-bottom: <b>50px</b> solid transparent;
+	border-left: <b>100px</b> solid #CE5937;
+}
+<b>.down50{
+	margin-top: -50px;
+	transform: translateY(50px);
+}</b>
+</pre>
+<pre style="vertical-align: top;">used HTML:
+
+&lt;div&gt;
+	&lt;div class=&quot;tri44&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri11 down50&quot;&gt;&lt;/div&gt;&lt;br/&gt;
+	&lt;div class=&quot;tri33&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri22&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre><br/>
+<div>
+	<div class="tri22"></div>
+	<div class="tri33 down50"></div><br/>
+	<div class="tri11"></div>
+	<div class="tri44"></div>
+</div>
+<pre style="vertical-align: top;">same CSS as above, and used this HTML:
+
+&lt;div&gt;
+	&lt;div class=&quot;tri22&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri33 down50&quot;&gt;&lt;/div&gt;&lt;br/&gt;
+	&lt;div class=&quot;tri11&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri44&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre><br/>
+
+<div>
+	<div class="tri44"></div>
+	<div class="tri11 down50"></div><br/>
+	<div class="tri33"></div>
+	<div class="tri22"></div>
+</div>
+<div class="move-left">
+	<div class="tri22"></div>
+	<div class="tri33 down50"></div><br/>
+	<div class="tri11"></div>
+	<div class="tri44"></div>
+</div>
+
+<pre style="vertical-align: top;">you can combine two of them
+together with negative margin
+that you must calculate:
+
+.move-left{
+	margin-left: -150px;
+}
+</pre>
+
+<pre style="vertical-align: top;">used HTML:
+
+&lt;div&gt;
+	&lt;div class=&quot;tri44&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri11 down50&quot;&gt;&lt;/div&gt;&lt;br/&gt;
+	&lt;div class=&quot;tri33&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri22&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;move-left&quot;&gt;
+	&lt;div class=&quot;tri22&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri33 down50&quot;&gt;&lt;/div&gt;&lt;br/&gt;
+	&lt;div class=&quot;tri11&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;tri44&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre><br/>
+<h3>Another simple shapes:</h3>
+<div>
+	<div class="for1"></div>
+</div>
+<pre style="vertical-align: top;">used CSS:
+
+div {
+	display: inline-block;
+	border-top: 100px solid #CE5937;
+	border-bottom: 100px solid #CE5937;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+}
+</pre>
+<h3>Or swap them to have a rotated one:</h3>
+<div>
+	<div class="for2"></div>
+</div>
+<pre style="vertical-align: top;">used CSS:
+
+div {
+	display: inline-block;
+	border-top: 100px solid <b>transparent</b>;
+	border-bottom: 100px solid <b>transparent</b>;
+	border-left: 100px solid <b>#CE5937</b>;
+	border-right: 100px solid <b>#CE5937</b>;
+}
+</pre>
+</body>
+</html>
